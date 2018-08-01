@@ -1,0 +1,19 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions:sheetsAppend",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy":
+      "firebase deploy --only functions:sheetsAppend,functions:sheetsGetKey",
+    "logs": "firebase functions:log"
+  },
+  "private": true,
+  "dependencies": {
+    "firebase-admin": "^5.13.1",
+    "firebase-functions": "^2.0.2",
+    "google-auth-library": "^1.6.1",
+    "googleapis": "^27.0.0"
+  }
+}
